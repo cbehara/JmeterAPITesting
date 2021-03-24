@@ -1,0 +1,55 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+2020/06/11 09:05:21,2426,Subscription for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,610,1933,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/subscription/Concept12,2423,0,1434
+2020/06/11 09:05:24,9438,Data fetch for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,1450878,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,4844,0,537
+2020/06/11 09:05:38,7529,Data fetch for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,1450718,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,4807,0,608
+2020/06/11 09:05:50,8076,Data fetch for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,1451364,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,5843,0,642
+2020/06/11 09:06:03,813,Data fetch for online data,503,Service Unavailable,OnlineData-1-Object & 1 User 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[503]]]
+
+****** comparison: [[[200]]]
+
+/",176,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,813,0,596
+2020/06/11 09:06:04,223,Data fetch for online data,503,Service Unavailable,OnlineData-1-Object & 1 User 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[503]]]
+
+****** comparison: [[[200]]]
+
+/",176,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,223,0,0
+2020/06/11 09:06:05,231,Data fetch for online data,503,Service Unavailable,OnlineData-1-Object & 1 User 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[503]]]
+
+****** comparison: [[[200]]]
+
+/",176,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,231,0,0
+2020/06/11 09:06:05,764,Data fetch for online data,503,Service Unavailable,OnlineData-1-Object & 1 User 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[503]]]
+
+****** comparison: [[[200]]]
+
+/",176,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,764,0,577
+2020/06/11 09:06:06,216,Data fetch for online data,503,Service Unavailable,OnlineData-1-Object & 1 User 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[503]]]
+
+****** comparison: [[[200]]]
+
+/",176,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,216,0,0
+2020/06/11 09:06:07,189,Data fetch for online data,503,Service Unavailable,OnlineData-1-Object & 1 User 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[503]]]
+
+****** comparison: [[[200]]]
+
+/",176,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,189,0,0
+2020/06/11 09:06:07,783,Data fetch for online data,503,Service Unavailable,OnlineData-1-Object & 1 User 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[503]]]
+
+****** comparison: [[[200]]]
+
+/",176,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,783,0,567
+2020/06/11 09:06:08,2018,Delete,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:9098 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",OnlineData-1-Object & 1 User 1-1,text,false,,2741,0,1,1,http://localhost:9098/v1/api/subscription/Concept12/941,0,0,2018

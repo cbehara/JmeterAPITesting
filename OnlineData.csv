@@ -1,0 +1,10 @@
+﻿TRAFFIC,NamedValue_Raw_Values,DE-HB-AAA
+TRAFFIC,RawTrafficDataBlock_Signalgroupvalue,DE-HB-AAA
+TRAFFIC,RawTrafficDataBlock_Detectoredge,DE-HB-AAA
+TRAFFIC,PublicTransportTelegrammExtended,DE-HB-AAA
+TRAFFIC,IntersectionDescription,DE-HB-AAA
+TRAFFIC,IntersectionFeature,DE-HB-AAA
+TRAFFIC,IntersectionStatus,DE-HB-AAA
+TRAFFIC,TrafficData_detector_currentValue,DE-HB-AAA
+TRAFFIC,TrafficData_detectorGroup_currentValue,DE-HB-AAA
+TRAFFIC,OperatingMessages_OperatingMessage,DE-HB-AAA

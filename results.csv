@@ -1,0 +1,15 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+2020/06/16 15:26:08,1462,Subscription for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,610,1933,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/subscription/Concept12,1462,0,742
+2020/06/16 15:26:10,3009,Data fetch for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,1410977,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,1038,0,0
+2020/06/16 15:26:19,2865,Data fetch for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,1410500,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,1185,0,572
+2020/06/16 15:26:28,4829,Data fetch for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,1410686,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,1146,0,568
+2020/06/16 15:26:39,2661,Data fetch for online data,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,1410472,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,1067,0,546
+2020/06/16 15:26:48,730,Data fetch for online data,502,Bad Gateway,OnlineData-1-Object & 1 User 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/",160,1784,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/data/Concept12/TRAFFIC/507200DT02D80252T0202275200000B050700204B2772B0D42B88D022252DDT2?size=2000000,729,0,539
+2020/06/16 15:26:48,182,Delete,502,Bad Gateway,OnlineData-1-Object & 1 User 1-1,text,false,,160,1732,1,1,https://data-api.tdb.test.its-siemens.com/v1/api/subscription/Concept12/965,182,0,0
+2020/06/16 15:26:48,0,Debug Sampler,200,OK,OnlineData-1-Object & 1 User 1-1,text,true,,574,0,1,1,null,0,0,0

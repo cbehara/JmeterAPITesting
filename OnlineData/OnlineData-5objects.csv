@@ -1,0 +1,5 @@
+﻿TRAFFIC,NamedValue_Raw_Values,DE-HB-AAA
+TRAFFIC,RawTrafficDataBlock_Signalgroupvalue,DE-HB-AAA
+TRAFFIC,RawTrafficDataBlock_Detectoredge,DE-HB-AAA
+TRAFFIC,PublicTransportTelegrammExtended,DE-HB-AAA
+TRAFFIC,IntersectionStatus,DE-HB-AAA

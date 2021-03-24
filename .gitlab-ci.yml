@@ -1,0 +1,45 @@
+#image: registry.mo-siemens.com/tdb/tdb-cli:jmeter5
+image: registry.mo-siemens.com/mocca/mo-build-env-java-tools:V0.9.9
+
+
+
+stages:
+  - qa
+
+############# Deploy tdb-coordinator on dev & qa environment #############
+.setup: &setup |
+  if [ ${CI_COMMIT_REF_SLUG} == "qa" ]
+  then
+     export KUBE_CONFIG=$(eval "echo \${KUBE_CONFIG_QA}")
+     if [[ ${KUBE_CONFIG:-""} != "" ]];
+     then
+       export KUBECONFIG=$(echo $(echo ${KUBE_CONFIG_QA} > kubeconfig; echo kubeconfig));
+     fi
+     kubectl port-forward service/data-api 9098:8081 -n tdb &
+     jmeter --version
+     jmeter -n -t "View_Results_Tree.jmx" -l Result1.csv -e -o HTML/
+     jmeter -g /builds/tdb/test-automation/performance-test/Result1.csv -o /builds/tdb/test-automation/performance-test/HTML/index2.html
+     #cat /builds/tdb/test-automation/performance-test/jmeter.log
+     #cd /builds/tdb/test-automation/performance-test/HTML
+     #cat /builds/tdb/test-automation/performance-test/HTML/index.html
+     kill %1
+  fi
+
+
+performance_tests:
+  stage: qa
+  tags:
+    - ITS-TDB
+  script:
+    - *setup
+  when: manual
+  artifacts:
+    when: always
+    paths:
+      - /builds/tdb/test-automation/performance-test/HTML/index.html
+      - /builds/tdb/test-automation/performance-test/Result1.csv
+      - /builds/tdb/test-automation/performance-test/HTML/index2.html
+      - /builds/tdb/test-automation/performance
+    reports:
+      junit: /builds/tdb/test-automation/performance-test/HTML/index.html
+      junit: /builds/tdb/test-automation/performance-test/Result1.csv
